@@ -1,2 +1,10 @@
+com/ecommerce/login/LoginServlet.class
+com/ecommerce/dao/ProductDao.class
 com/ecommerce/registration/RegistrationServlet.class
+com/ecommerce/loginpack/model/Product.class
+com/ecommerce/dao/UserDao.class
 com/ecommerce/connection/DbConnection.class
+com/ecommerce/login/AddCartServlet.class
+com/ecommerce/login/QIncreDerServlet.class
+com/ecommerce/loginpack/model/UserModelClass.class
+com/ecommerce/loginpack/model/Cart.class

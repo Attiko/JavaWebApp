@@ -4,7 +4,11 @@
     Author     : oladimeji
 --%>
 
+<%@page import="com.ecommerce.connection.DbConnection"%>
+<%@page import="com.ecommerce.dao.ProductDao"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -24,7 +28,7 @@
 	 	<h2>Login</h2>
 	</div>
 
-	 <form method="post" action="Controller">
+	 <form method="post" action="user-login">
 	 
 	 <input type="hidden" name="page" value="login-form">
 	 
@@ -33,11 +37,11 @@
 	 
 	 	<div class="signup-group">
 	 		<label>Username</label>
-	 		<input type="text" name="username" placeholder="Your Username">
+	 		<input type="text" name="lusername" placeholder="Your Username">
 	 	</div>
 	 	<div class="signup-group">
 	 		<label>Password</label>
-	 		<input type="password" name="password" placeholder="Enter password">
+	 		<input type="password" name="lpassword" placeholder="Enter password">
 	 	</div>
 	 	<div class="signup-group">
 	 		<button type="submit" name="login" class="signup-btn">Log in</button>
