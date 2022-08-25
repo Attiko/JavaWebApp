@@ -1,8 +1,13 @@
+com/ecommerce/login/CheckOutServlet.class
 com/ecommerce/login/LoginServlet.class
-com/ecommerce/dao/ProductDao.class
+com/ecommerce/login/OrderNowServlet.class
+com/ecommerce/dao/OrderDao.class
 com/ecommerce/registration/RegistrationServlet.class
 com/ecommerce/loginpack/model/Product.class
+com/ecommerce/login/RemoveItemServlet.class
+com/ecommerce/dao/ProductDao.class
 com/ecommerce/dao/UserDao.class
+com/ecommerce/loginpack/model/Order.class
 com/ecommerce/connection/DbConnection.class
 com/ecommerce/login/AddCartServlet.class
 com/ecommerce/login/QIncreDerServlet.class

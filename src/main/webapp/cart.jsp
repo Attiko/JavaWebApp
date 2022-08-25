@@ -63,7 +63,7 @@
             <div class="d-flex py-3">
                 <h3>Total Price: £ ${(total>0)?total:0 }
                 </h3>
-                <a class ="mx-3 btn btn-primary" href="#">Check Out</a>
+                <a class ="mx-3 btn btn-success" href="checkout.jsp">Check Out</a>
             </div>
             <table class="table table-light">
                 <thead>
@@ -71,7 +71,7 @@
                         <th scope="col">Name</th>
                         <th scope="col">Category</th>
                         <th scope="col">Price</th>
-                        <th scope="col">Quantity</th>
+                        <th scope="col">Buy Now</th>
                         <th scope="col">Cancel</th>
                     </tr>
                 </thead>
@@ -84,7 +84,7 @@
                         <td><%= c.getCategory()%></td>
                         <td><%= c.getPrice()%></td>
                         <td> 
-                            <form action="" method="post"class="form-inline">
+                            <form action="order-now" method="post" class="form-inline">
                                 <input type="hidden" name="id" value="<%= c.getProductid()%>" class="form-input">
                                 <div class="input-group d-flex justify-content-between">
                                     <a class="btn btn-sm btn-decre" href="quan-incre-dec?action=decre&id=<%= c.getProductid()%>"><i class="fas fa-minus-square"></i></a>
@@ -92,9 +92,10 @@
                                     <a class="btn btn-sm btn-incre" href="quan-incre-dec?action=incre&id=<%= c.getProductid()%>"><i class="fas fa-plus-square"></i></a>
 
                                 </div>
+                                    <button type="submit" class="btn btn-success btn-sm">Buy</button>
                             </form>
                         </td>
-                        <td><a class="btn btn-danger">Remove</a></td>
+                        <td><a class="btn btn-danger" href="remove-item?id=<%= c.getProductid()%>">Remove</a></td>
                     </tr>
 
                     <% }

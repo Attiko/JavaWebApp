@@ -51,6 +51,32 @@ public class ProductDao {
         
     }
     
+    
+    public Product getSingleProduct(int id) {
+		 Product row = null;
+	        try {
+	            query = "select * from products where productid=? ";
+
+	            pst = this.con.prepareStatement(query);
+	            pst.setInt(1, id);
+	            rs = pst.executeQuery();
+
+	            while (rs.next()) {
+	            	row = new Product();
+	                row.setProductid(rs.getInt("productid"));
+	                row.setName(rs.getString("name"));
+	                row.setCategory(rs.getString("category"));
+	                row.setPrice(rs.getDouble("price"));
+	                row.setImage(rs.getString("image"));
+	            }
+	        } catch (Exception e) {
+	            e.printStackTrace();
+	            System.out.println(e.getMessage());
+	        }
+
+	        return row;
+	    }
+    
     public List<Cart> getCartProducts(ArrayList<Cart> cartList){
         List<Cart> products = new ArrayList<Cart>();
         

@@ -48,7 +48,7 @@ public class LoginServlet extends HttpServlet {
                 UserModelClass user = udao.userLogin(username, password);
                 
                 if(user !=null){
-                   request.getSession().setAttribute("'auth", user);
+                   request.getSession().setAttribute("auth", user);
                    response.sendRedirect("index.jsp");
                 }else{
                    out.print("user login failed");

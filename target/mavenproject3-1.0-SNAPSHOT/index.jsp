@@ -48,6 +48,7 @@ if(cart_list !=null){
             <li><a href="#home">Home</a></li>
             <li><a href="login.jsp">Log-in</a></li>
             <li><a href="register.jsp">Sign-up</a></li>
+            <li><a href="orders.jsp">orders</a></li>
             <li><a href="cart.jsp">Cart<span class="badge bg-danger px-2">${cart_list.size()}</span></a></li>
         </ul>
 
@@ -67,7 +68,7 @@ if(cart_list !=null){
                             <h6 class="category">Category: <%= p.getCategory()%></h6>
                             <div class="mt-3 d-flex justify-content-between"> 
                                 <a href="add-to-cart?id=<%= p.getProductid()%>" class="btn btn-primary">Add To Cart</a>
-                                <a href="#" class="btn btn-primary">Buy Now</a>
+                                <a href="order-now?quantity=1&id=<%=p.getProductid()%>" class="btn btn-success">Buy Now</a>
 
                             </div>
 
