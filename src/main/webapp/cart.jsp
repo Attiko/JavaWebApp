@@ -53,10 +53,10 @@
     </head>
     <body>
         <ul>
-            <li><a href="index.jsp">Home</a></li>
-            <li><a href="login.jsp">Log-in</a></li>
-            <li><a href="register.jsp">Sign-up</a></li>
-            <li><a href="cart.jsp">Cart<span class="badge bg-danger px-2">${cart_list.size()}</span></a></li>
+            <li><a href="index.jsp"><i class="fa fa-fw fa-home"></i>Home</a></li>
+            <li><a href="login.jsp"><i class="fa fa-fw fa-user"></i>Log-in</a></li>
+            <li><a href="register.jsp"><i class="fa-solid fa-user-plus"></i>Sign-up</a></li>
+            <li><a href="cart.jsp"><i class="fa-solid fa-cart-arrow-down"></i>Cart<span class="badge bg-danger px-2">${cart_list.size()}</span></a></li>
         </ul>
 
         <div class="container">

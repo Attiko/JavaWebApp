@@ -11,12 +11,15 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
     </head>
     <body>
         <ul>
-        <li><a href="index.jsp">Home</a></li>
-        <li><a href="login.jsp">Log-in</a></li>
-        <li><a href="register.jsp">Sign-up</a></li>
+        <li><a href="index.jsp"><i class="fa fa-fw fa-home"></i>Home</a></li>
+            <li><a href="login.jsp"><i class="fa fa-fw fa-user"></i>Log-in</a></li>
+            <li><a href="register.jsp"><i class="fa-solid fa-user-plus"></i>Sign-up</a></li>
+            
         <li><a href="#cart">Cart</a></li>
         </ul>
         
